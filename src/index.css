@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: 50vh;
+    height: 100vh;
 }
 
 /* ========= UTILITY* =================== */
@@ -28,6 +28,7 @@ p {
     line-height: 22px;
 }
 
+
 /* ========= UTILITY* =================== */
 
 /*========= ICONS =============*/
@@ -37,13 +38,8 @@ p {
     cursor: pointer;
 }
 
-/* .close-icon {
-    display: flex;
-    justify-content: end;
-    cursor: pointer;
-} */
-
-.close-iconTwo,.close-icontwo{
+.close-iconTwo,
+.close-icontwo {
     transform: translateY(-30px);
     cursor: pointer;
     display: flex;
@@ -55,6 +51,7 @@ p {
 }
 
 /*========= ICONS =============*/
+
 
 /*========= BUTTONS =============*/
 button {
@@ -80,12 +77,12 @@ button {
     background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
 }
 
-.btn-3{
+.btn-3 {
+    position: absolute;
+    left: 30%;
     background-color: #ffcb43;
     background-image: linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);
-    transform: translateX(460px);
 }
-
 
 .btns-modal-window-one {
     margin-top: 2rem;
@@ -99,7 +96,12 @@ button {
     border: 1px solid #000;
 }
 
-input{
+.btns-modal-window-three p {
+    color: #fff;
+}
+
+
+input {
     width: 310px;
     height: 32px;
     margin-top: 2rem;
@@ -113,20 +115,27 @@ input{
 
 /*========= BUTTONS =============*/
 
+
+
+/*========= MODALS =============*/
+
 .modals {
     width: 100%;
     min-height: 400px;
     margin-top: 20rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 23rem;
+    display: flex;
+    justify-content: center;
 }
 
-.modal-one,
-.modal-two,
-.modal-three{
-    padding: 0px 100px;
+.bx1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 23rem;
+    margin-bottom: 14rem;
+}
+
+.bx2 {
+    margin-top: 27rem;
 }
 
 .modal-window-one {
@@ -140,7 +149,7 @@ input{
     place-content: center;
 }
 
-.modal-window-two{
+.modal-window-two {
     position: absolute;
     top: 6%;
     margin-bottom: 5rem;
@@ -166,6 +175,10 @@ input{
     text-align: center;
 }
 
+/*========= MODALS =============*/
+
+
+
 .visibility {
     display: none;
 }
@@ -177,12 +190,12 @@ input{
     gap: 3rem;
 }
 
-.text-two{
- display: flex;
- justify-content: space-around;
- gap: 2rem;
- margin-bottom: 2rem;
- cursor: pointer;
+.text-two {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
 }
 
 .checking {
@@ -192,10 +205,12 @@ input{
     background-color: #4d4855;
     background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
 }
-.checking p{
+
+.checking p {
     color: #fff;
 }
-.sub{
+
+.sub {
     width: 310px;
     height: 38px;
     border: 1px solid #000;
@@ -203,12 +218,9 @@ input{
     background-color: #4d4855;
     background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
 }
-.btns-modal-window-three p{
-    color: #fff;
-}
 
 /*============ ANIMATIONS =============*/
-.animate{
+.animate {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -220,8 +232,10 @@ input{
 @media(max-width:900px) {
     .modals {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0px 50px;
+    }
+
+    .bx1 {
+        display: grid;
     }
 
     .modal-window-one {
@@ -235,17 +249,62 @@ input{
         place-content: center;
     }
 
+    .modal-window-two {
+        position: absolute;
+        top: 47%;
+        margin-bottom: 5rem;
+        width: 300px;
+        height: 240px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+
+
+    .modal-window-three {
+        position: absolute;
+        top: 95%;
+        right: 30%;
+        margin-bottom: 5rem;
+        width: 410px;
+        height: 250px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: grid;
+        place-content: center;
+        text-align: center;
+    }
+
+    .btn-3 {
+         position: absolute;
+         left: 30%;
+    }
+
     .visibility {
         display: none;
     }
 }
 
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
