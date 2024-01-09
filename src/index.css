@@ -1,22 +1,78 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: flex;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-
 }
 
-.modals{
-   display: grid;
-   grid-template-columns: repeat(2 , 1fr);
-   grid-template-rows: repeat(4, 1fr);
-   gap: 23rem;
-   place-content: center;
+/* ========= UTILITY* =================== */
+h2 {
+    color: var(--Secondary-Dark-Color, #54595E);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+p {
+    color: rgba(84, 89, 94, 0.60);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+/*========= ICONS =============*/
+.close-icon{
+    display: flex;
+}
+.modals {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 23rem;
+    padding: 40px 50px;
+}
+
+.modal-one {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    place-content: center;
+}
+
+.modal-window-one {
+    margin-bottom: 5rem;
+    width: 400px;
+    height: 200px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button {
+    width: 195px;
+    height: 45px;
+    border-radius: 9px;
+    font-size: 23px;
+    color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #50d8d7;
+    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+
 }
