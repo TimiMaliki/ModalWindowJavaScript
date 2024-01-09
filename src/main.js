@@ -9,7 +9,6 @@ const modalWindowThree = document.querySelector(".modal-window-three")
 
 const closeIcon = document.querySelector(".close-icon")
 const closeIconTwo = document.querySelector(".close-iconTwo")
-const closeIconThree = document.querySelector(".close-iconThree")
 
 const modal = document.querySelector(".modal-one")
 const box = document.querySelector(".box")
@@ -21,6 +20,7 @@ const yesBtn = document.querySelector(".btn-yes")
 
 modalBtnOne.addEventListener("click" , (e) => {
     modalWindowOne.classList.toggle("visibility")
+    modalWindowOne.classList.add("animate")
     closeIcon.addEventListener("click" , (e) => {
         modalWindowOne.classList.add("visibility")
     })
@@ -36,10 +36,9 @@ modalBtnOne.addEventListener("click" , (e) => {
     }
 })
 
-
 modalBtnTwo.addEventListener("click" , (e) => {
     modalWindowTwo.classList.toggle("visibility")
-    console.log("hello")
+    modalWindowTwo.classList.add("animate")
     closeIconTwo.addEventListener("click" , (e) => {
         modalWindowTwo.classList.add("visibility")
     })
@@ -47,11 +46,12 @@ modalBtnTwo.addEventListener("click" , (e) => {
 
 modalBtnThree.addEventListener("click" , (e) => {
     modalWindowThree.classList.toggle("visibility")
-    console.log("hello")
-    closeIconThree.addEventListener("click" , (e) => {
-        modalWindowThree.classList.add("visibility")
-    })
+
+   
+   
+    
 })
+
 
 
 
