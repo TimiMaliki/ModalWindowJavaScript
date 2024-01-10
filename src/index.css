@@ -1,310 +1,94 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
-
-/* ========= UTILITY* =================== */
-h2 {
-    color: var(--Secondary-Dark-Color, #54595E);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-p {
-    color: #111;
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-}
-
-
-/* ========= UTILITY* =================== */
-
-/*========= ICONS =============*/
-.close-icon {
+section{
+    background: #fff;
+    background-image: url("./asset/2-go-for-it.jpg");
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: end;
-    cursor: pointer;
+    align-items: center;
 }
 
-.close-iconTwo,
-.close-icontwo {
-    transform: translateY(-30px);
-    cursor: pointer;
-    display: flex;
-    justify-content: end;
-}
-
-.bi-check-circle {
-    font-size: 23px;
-}
-
-/*========= ICONS =============*/
-
-
-/*========= BUTTONS =============*/
-button {
-    width: 195px;
-    height: 45px;
-    border-radius: 9px;
-    font-size: 23px;
-    color: #fff;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
-
-
-.btn-1 {
-    background-color: #50d8d7;
-    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
-}
-
-.btn-2 {
-    background-color: #ffffff;
-    background-image: linear-gradient(315deg, #ffffff 0%, #ff7878 74%);
-}
-
-.btn-3 {
-    position: absolute;
-    left: 30%;
-    background-color: #ffcb43;
-    background-image: linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);
-}
-
-.btns-modal-window-one {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.btn-confirm {
-    width: 100px;
-    height: 35px;
-    border: 1px solid #000;
-}
-
-.btns-modal-window-three p {
-    color: #fff;
-}
-
-
-input {
-    width: 310px;
-    height: 32px;
-    margin-top: 2rem;
-    padding: 15px;
-    border-radius: 4px;
-    border: 1px solid #c3cbdc;
-    background: #ffff;
-    font-size: 17px;
-}
-
-
-/*========= BUTTONS =============*/
-
-
-
-/*========= MODALS =============*/
-
-.modals {
-    width: 100%;
-    min-height: 400px;
-    margin-top: 20rem;
-    display: flex;
-    justify-content: center;
-}
-
-.bx1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 23rem;
-    margin-bottom: 14rem;
-}
-
-.bx2 {
-    margin-top: 27rem;
-}
-
-.modal-window-one {
-    position: absolute;
-    top: 5%;
-    margin-bottom: 5rem;
-    width: 400px;
-    height: 250px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+.grid{
     display: grid;
-    place-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 900px;
+    height: 100%;
+    padding: 100px 40px;
 }
-
-.modal-window-two {
-    position: absolute;
-    top: 6%;
-    margin-bottom: 5rem;
+.card{
     width: 300px;
-    height: 240px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: grid;
-    place-content: center;
-    text-align: center;
-}
-
-
-.modal-window-three {
-    position: absolute;
-    top: 75%;
-    right: 30%;
-    margin-bottom: 5rem;
-    width: 410px;
-    height: 250px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    display: grid;
-    place-content: center;
-    text-align: center;
-}
-
-/*========= MODALS =============*/
-
-
-
-.visibility {
-    display: none;
-}
-
-.text {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 3rem;
-}
-
-.text-two {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 2rem;
-    cursor: pointer;
 }
-
-.checking {
-    width: 200px;
-    height: 35px;
-    border: 1px solid #000;
-    background-color: #4d4855;
-    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+.card-body{
+    display: grid;
+    place-content: center;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    position: relative;
 }
-
-.checking p {
-    color: #fff;
+img{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
 }
-
-.sub {
-    width: 310px;
-    height: 38px;
-    border: 1px solid #000;
-    margin-top: 1rem;
-    background-color: #4d4855;
-    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+.cards-product-name{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    display: grid;
+    padding: 10px;
 }
-
-/*============ ANIMATIONS =============*/
-.animate {
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
+.mb{
+    margin-bottom: 1rem;
 }
-
-/*============= DEVICES ====================*/
-
-@media(max-width:900px) {
-    .modals {
-        display: grid;
+@media(max-width:634px){
+    section{
+     display: grid;
+     place-content: center;
+     height: 100%;
     }
-
-    .bx1 {
+    
+    .grid{
         display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 100%;
+        height: 100vh;
     }
-
-    .modal-window-one {
-        width: 300px;
-        height: 250px;
-        position: absolute;
-        top: 5%;
-        margin-bottom: 5rem;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        display: grid;
-        place-content: center;
-    }
-
-    .modal-window-two {
-        position: absolute;
-        top: 47%;
-        margin-bottom: 5rem;
+    .card{
         width: 300px;
         height: 240px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        display: grid;
-        place-content: center;
-        text-align: center;
     }
-
-
-    .modal-window-three {
-        position: absolute;
-        top: 95%;
-        right: 30%;
-        margin-bottom: 5rem;
-        width: 410px;
-        height: 250px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        display: grid;
-        place-content: center;
-        text-align: center;
+    .card-body{
+        width: 300px;
+        height: 240px;
     }
-
-    .btn-3 {
-         position: absolute;
-         left: 30%;
+    .mb{
+        margin-bottom: 0rem;
     }
-
-    .visibility {
-        display: none;
+    .cards-product-name{
+        margin-top: 1.9rem;
     }
-}
-
-@-webkit-keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
+    h2{
+        font-size: 13px;
     }
 }
