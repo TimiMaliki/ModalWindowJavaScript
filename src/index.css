@@ -137,6 +137,10 @@ button{
 .visibility{
     display: none;
 }
+.blur{
+    filter: blur(8px);
+  -webkit-filter: blur(8px)
+}
 
 @media(max-width:504px){
     section{

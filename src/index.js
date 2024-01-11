@@ -43,6 +43,10 @@ clickForMore.addEventListener('click', (e) =>{
     modalWindow.classList.toggle("visibility")
     modalWindow.classList.add("animate")
 
+    //blur the background
+    const sectionLayout = document.querySelector(".product")
+    sectionLayout.classList.toggle("blur")
+
     console.log("hello")
 })
 
