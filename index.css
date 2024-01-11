@@ -221,6 +221,14 @@ button{
         border-radius: 9px;
     }
 }
+@media(max-width:390px){
+    .modal-window{
+        width: 300px;
+        height: 300px;
+        top: 30%;
+        left: 9%;
+    }
+}
 
 /*============ ANIMATIONS =============*/
 .animate {
