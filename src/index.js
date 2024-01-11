@@ -25,13 +25,13 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 // modal window appears when page is loaded
 
-window.addEventListener('load', (e) =>{
-    const modalWindow = document.querySelector(".modal-window")
-    modalWindow.classList.toggle("visibility")
-    modalWindow.classList.add("animate")
+// window.addEventListener('load', (e) =>{
+//     const modalWindow = document.querySelector(".modal-window")
+//     modalWindow.classList.toggle("visibility")
+//     modalWindow.classList.add("animate")
 
-    console.log("hello")
-})
+//     console.log("hello")
+// })
 
 
 // or click button to open modal window
