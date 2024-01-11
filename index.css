@@ -145,7 +145,7 @@ button{
 @media(max-width:504px){
     section{
         background: #fff;
-        background-image: url("./asset/2-go-for-it.jpg");
+        background-image: url("/2-go-for-it.jpg");
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
