@@ -40,7 +40,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const clickForMore = document.querySelector(".for-more")
 
-clickForMore.addEventListener('click', (btnModal) =>{
+clickForMore.addEventListener('click', (e) =>{
     const modalWindow = document.querySelector(".modal-window")
     modalWindow.classList.remove("visibility")
     modalWindow.classList.add("animate")
