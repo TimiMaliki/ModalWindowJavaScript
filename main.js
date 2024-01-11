@@ -19,6 +19,8 @@ function linkAction(){
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
+
+
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
@@ -38,10 +40,14 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 const clickForMore = document.querySelector(".for-more")
 
-clickForMore.addEventListener('click', (e) =>{
+clickForMore.addEventListener('click', (btnModal) =>{
     const modalWindow = document.querySelector(".modal-window")
     modalWindow.classList.remove("visibility")
     modalWindow.classList.add("animate")
+
+    const navMenu = document.getElementById('nav-menu')
+    
+    navMenu.classList.remove('show')
 
     //blur the background
     const sectionLayout = document.querySelector(".product")
