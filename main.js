@@ -57,14 +57,21 @@ clickForMore.addEventListener('click', (e) =>{
  const btnOne = document.querySelector(".btn-1")
  const btnTwo = document.querySelector(".btn-2")
 
+ 
+
+ const footer = document.querySelector("footer")
+ footer.classList.add("blur")
+
     if(btnOne.innerText === "No!, I did'nt" || btnTwo.innerText === "Yes!, I Loved it"){
         btnOne.addEventListener("click", (e) => {
             modalWindow.classList.add("visibility")
             sectionLayout.classList.remove("blur")
+
         })
         btnTwo.addEventListener("click", (e) => {
             modalWindow.classList.add("visibility")
             sectionLayout.classList.remove("blur")
+            footer.classList.remove("blur")
         })
     }
 })
