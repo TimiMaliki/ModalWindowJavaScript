@@ -45,8 +45,8 @@ clickForMore.addEventListener('click', (btnModal) =>{
     modalWindow.classList.remove("visibility")
     modalWindow.classList.add("animate")
 
+     // When we click on each nav__link, we remove the show-menu class
     const navMenu = document.getElementById('nav-menu')
-    
     navMenu.classList.remove('show')
 
     //blur the background
