@@ -40,14 +40,27 @@ const clickForMore = document.querySelector(".for-more")
 
 clickForMore.addEventListener('click', (e) =>{
     const modalWindow = document.querySelector(".modal-window")
-    modalWindow.classList.toggle("visibility")
+    modalWindow.classList.remove("visibility")
     modalWindow.classList.add("animate")
 
     //blur the background
     const sectionLayout = document.querySelector(".product")
-    sectionLayout.classList.toggle("blur")
+    sectionLayout.classList.add("blur")
 
-    console.log("hello")
+ // yes or no buttons 
+ const btnOne = document.querySelector(".btn-1")
+ const btnTwo = document.querySelector(".btn-2")
+
+    if(btnOne.innerText === "No!, I did'nt" || btnTwo.innerText === "Yes!, I Loved it"){
+        btnOne.addEventListener("click", (e) => {
+            modalWindow.classList.add("visibility")
+            sectionLayout.classList.remove("blur")
+        })
+        btnTwo.addEventListener("click", (e) => {
+            modalWindow.classList.add("visibility")
+            sectionLayout.classList.remove("blur")
+        })
+    }
 })
 
 
