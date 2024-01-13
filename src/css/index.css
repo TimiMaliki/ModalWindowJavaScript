@@ -88,7 +88,7 @@ img{
     width: 700px;
     height: 300px;
     border-radius: 9px;
-    background-image: url("./asset/4873152.jpg");
+    background-image: url("../../assets/imagies/4873152.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ button{
 @media(max-width:504px){
     section{
         background: #fff;
-        background-image: url("/2-go-for-it.jpg");
+        background-image: url("../../assets/imagies/2-go-for-it.jpg");
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
