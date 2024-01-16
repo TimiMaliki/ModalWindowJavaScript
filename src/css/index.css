@@ -127,6 +127,7 @@ button{
     background: #ff77ff;
     color:#000 ;
     border: none;
+    cursor: pointer;
 }
 .btn-1 , .btn-2 {
     border-radius: 9px;
